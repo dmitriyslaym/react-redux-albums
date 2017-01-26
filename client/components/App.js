@@ -9,7 +9,8 @@ import Main from './Main';
 function mapStateToProps(state) {
 	return {
 		albums: state.albums,
-		comments: state.comments
+		comments: state.comments,
+		genres: state.genres
 	};
 };
 

@@ -22,3 +22,10 @@ export function AddAlbum(artist, title, genre, display_src) {
 		display_src
 	};
 };
+
+export function AddNewGenre(albums) {
+	return {
+		type: 'ADD_NEW_GENRE',
+		albums
+	};
+};

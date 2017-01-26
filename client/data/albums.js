@@ -14,6 +14,14 @@ const albums = [
       "id":"1160844458347054781",
       "display_src":"https://upload.wikimedia.org/wikipedia/en/f/f5/Reasonable_Doubt_New.jpg",
       "genre": "East-Cost Hip-Hop"
+   },
+   {
+      "artist": "Jay-Z",
+      "title":"Reasonable Doubt Delux",
+      "likes":59,
+      "id":"116084445834655656",
+      "display_src":"https://upload.wikimedia.org/wikipedia/en/f/f5/Reasonable_Doubt_New.jpg",
+      "genre": "East-Cost Hip-Hop"
    }
 ];
 
