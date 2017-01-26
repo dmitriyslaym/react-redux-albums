@@ -3,9 +3,8 @@ function genres(state=[], action) {
 		case 'ADD_NEW_GENRE': 
 			let genresAll = action.albums.map(album => album.genre);
 			let genresUnique = [...new Set(genresAll)]; 
-			console.log(genresUnique);
 			return [
-				...state, ...genresUnique
+				...genresUnique
 			];
 		default:
 			return state;	
