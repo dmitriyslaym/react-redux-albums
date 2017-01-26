@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import App from './components/App';
 import AlbumsList from './components/AlbumsList';
 import AlbumInfo from './components/AlbumInfo';
+import Test from './components/Test';
 
 import store, { history } from './store';
 
@@ -15,6 +16,7 @@ const router = (
 			<Route path='/' component={App}>
 				<IndexRoute component={AlbumsList}></IndexRoute>
 				<Route path='/view/:albumId' component={AlbumInfo}></Route>
+				<Route path='/test' component={Test}></Route>
 			</Route>
 		</Router>
 	</Provider>
