@@ -10,7 +10,8 @@ function mapStateToProps(state) {
 	return {
 		albums: state.albums,
 		comments: state.comments,
-		genres: state.genres
+		genres: state.genres,
+		filters: state.filters
 	};
 };
 

@@ -29,3 +29,11 @@ export function AddNewGenre(albums) {
 		albums
 	};
 };
+
+export function SetFilters(name, value) {
+	return {
+		type: 'SET_FILTERS',
+		name,
+		value
+	};
+};
