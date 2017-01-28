@@ -1,4 +1,5 @@
 import React from 'react';
+import SmoothScrollBtn from './SmoothScrollBtn'
 import { Link } from 'react-router';
 
 const Main = React.createClass({
@@ -14,8 +15,9 @@ const Main = React.createClass({
 		return (
 			<div>
 				<Link to='/'>
-					<h1 className="appHeading">Albums Collection</h1>
+					<h1 id="top" className="appHeading">Albums Collection</h1>
 				</Link>
+				<SmoothScrollBtn />
 				{React.cloneElement({...this.props}.children, {...this.props})}
 			</div>
 			);
