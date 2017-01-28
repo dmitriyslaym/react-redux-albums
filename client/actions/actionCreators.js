@@ -5,11 +5,12 @@ export function IncrementLikes(index) {
 	};
 };
 
-export function AddComment(text, user) {
+export function AddComment(user, text, id) {
 	return {
 		type: 'ADD_COMMENT',
+		user,
 		text,
-		user
+		id
 	};
 };
 
@@ -30,10 +31,11 @@ export function AddNewGenre(albums) {
 	};
 };
 
-export function SetFilters(name, value) {
+export function SetFilters(name, value, criteria) {
 	return {
 		type: 'SET_FILTERS',
 		name,
-		value
+		value,
+		criteria
 	};
 };

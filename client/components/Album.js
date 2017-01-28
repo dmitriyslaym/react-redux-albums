@@ -7,14 +7,16 @@ const Album = React.createClass({
 		const { IncrementLikes} = this.props;
 		const index = this.props.albums.indexOf(this.props.album);
 		return (
-			<div>
+			<div className='album'>
 				<Link to={`/view/${id}`}>
-					<img src={display_src}/>
+					<div className="album__imgWrapper">
+					<img className='album__img' src={display_src}/>
+					</div>
 				</Link>
-				<p>{artist}</p>
-				<p>{title}</p>
-				<p>{genre}</p>
-				<p onClick={IncrementLikes.bind(null, index)}>Likes: {likes}</p>
+				<p className="album__infoRow">{artist}</p>
+				<p className="album__infoRow">{title}</p>
+				<p className="album__infoRow">{genre}</p>
+				<p className="album__infoRow"><span className="likeIcon" onClick={IncrementLikes.bind(null, index)}>&hearts;</span> Likes: {likes}</p>
 			</div>
 			)
 		}

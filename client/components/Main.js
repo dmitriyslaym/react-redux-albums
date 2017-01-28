@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router';
-import NewAlbumForm from './NewAlbumForm';
-import Filters from './Filters';
 
 const Main = React.createClass({
 	componentWillMount() {
@@ -18,8 +16,6 @@ const Main = React.createClass({
 				<Link to='/'>
 					<h1 className="appHeading">Albums Collection</h1>
 				</Link>
-				<NewAlbumForm {...this.props} />
-				<Filters {...this.props} />
 				{React.cloneElement({...this.props}.children, {...this.props})}
 			</div>
 			);

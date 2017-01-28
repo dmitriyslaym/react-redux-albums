@@ -12,7 +12,8 @@ function filters(state=[], action) {
 				[
 					...state, {
 						name: action.name,
-						value: action.value
+						value: action.value,
+						criteria: action.criteria
 					}
 				]
 			);

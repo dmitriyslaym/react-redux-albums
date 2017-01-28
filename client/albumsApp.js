@@ -2,6 +2,9 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
+// CSS
+import css from './styles/style.styl';
+
 // Components
 import App from './components/App';
 import AlbumsList from './components/AlbumsList';
