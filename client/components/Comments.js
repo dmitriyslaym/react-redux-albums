@@ -1,5 +1,5 @@
 import React from 'react';
-import NewCommentForm from './newCommentForm.js';
+import NewCommentForm from './NewCommentForm.js';
 
 class Comments extends React.Component {
 	render() {

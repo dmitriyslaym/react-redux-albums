@@ -11,7 +11,7 @@ import AlbumsList from './components/AlbumsList';
 import AlbumInfo from './components/AlbumInfo';
 import Test from './components/Test';
 
-import store, { history } from './store';
+import store, { history, setLocalStorage } from './store';
 
 const router = (
 	<Provider store={store}>
@@ -25,4 +25,12 @@ const router = (
 	</Provider>
 	);
 
-render(router, document.getElementById('root'));
+function run() {
+	let state = store.getState();
+	setLocalStorage(state, ['albums', 'comments']);
+	render(router, document.getElementById('root'));
+};
+
+run();
+store.subscribe(run);
+
