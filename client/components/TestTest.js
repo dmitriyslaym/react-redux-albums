@@ -1,10 +1,34 @@
 import React from 'react';
 
+import { bindActionCreators } from 'redux';
+import * as actionCreators from '../actions/actionCreators';
+import { connect } from 'react-redux';
+
+function mapStateToProps(state) {
+	console.log(state);
+	return {
+		albums: state.albums,
+		comments: state.comments,
+		genres: state.genres,
+		filters: state.filters
+	};
+};
+
+function mapDispatchToProps(dispatch) {
+	return bindActionCreators(actionCreators, dispatch);
+};
+
+
 const TestTest = (props) => (
 	<div>
-		<h1>Test</h1>
+		{console.log(props)}
+		<h1>Test5</h1>
 	</div>
 	);
 
-export default TestTest;
+
+
+const TestTestConnected = connect(mapStateToProps, mapDispatchToProps)(TestTest);
+
+export default TestTestConnected;
 
