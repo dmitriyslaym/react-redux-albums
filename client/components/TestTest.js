@@ -22,7 +22,7 @@ function mapDispatchToProps(dispatch) {
 const TestTest = (props) => (
 	<div>
 		{console.log(props)}
-		<h1>Test5557778787</h1>
+		<h1>Test5557778787667</h1>
 	</div>
 	);
 
